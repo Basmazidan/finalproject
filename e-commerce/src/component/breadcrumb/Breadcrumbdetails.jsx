@@ -7,15 +7,15 @@ function Breadcrumb({ productName }) {
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   return (
-    <div className="breadcrumb">
-      {/* Static Home Link */}
+    <div className="breadcrumb1">
+
       <Link to="/">Home</Link>
 
-      {/* Static Shop Link */}
+     
       <span>{' > '}</span>
       <Link to="/shop">Shop</Link>
 
-      {/* Dynamic breadcrumbs after "Shop" */}
+     
       {pathnames.slice(1).map((value, index) => {
         const routeTo = `/${pathnames.slice(1, index + 2).join('/')}`; // Adjust slice to skip first path
         const isLast = index === pathnames.length - 2; // Adjust index as we skip the first path

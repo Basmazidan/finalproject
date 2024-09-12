@@ -1,14 +1,15 @@
 import React from 'react';
-// import { useLocation } from 'react-router-dom';
+
 import Backgroundcart from '../../component/backgroundcart/Backgroundcart'
 import './Cart.css'
 import { useCart } from '../../component/cartcontext/Cartcontext'; 
 
 const Cart = () => {
-    // const location = useLocation();
-    // const { cart } = location.state || { cart: [] };
+
     const { cart } = useCart();
     const subtotal = cart.reduce((total, item) => total + item.price, 0);
+    console.log(cart);
+    
 
 
     return (
@@ -18,7 +19,8 @@ const Cart = () => {
         <div className='main-cart'>
             <div className='main-wrapper'>
             <div className='header-cart'>
-                <label htmlFor="">Product</label>
+                <label htmlFor="">product image</label>
+                <label htmlFor="">Product title</label>
                 <label htmlFor="">Price</label>
                 <label htmlFor="">Quantity</label>
                 <label htmlFor="">Subtotal</label>
@@ -26,8 +28,10 @@ const Cart = () => {
 
             {/* Loop through each item in the cart */}
             {cart.map((item, index) => (
-                <div className='product-cart' key={index}>
-                    <img className='imgcart' src={item.image} alt={item.title} />
+                
+
+                <div className='product-cart' key={item.id || `${item.title}-${index}`}>
+                <img className='imgcart' src={item.image} alt={item.title} />
                     <div className='info-for-product'>
                         <div className='product-label'>
                         <label>{item.title}</label>
@@ -43,7 +47,10 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>
+
+                 
             ))}
+            
 </div>
             {/* Cart totals section */}
             {cart.length > 0 && (

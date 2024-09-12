@@ -62,11 +62,11 @@ export const Shop = () => {
 
 
   return (
-
+<>
     <div className='shop-continer'>
       <div className='shop-wrapper'  style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <h1>Shop</h1>
-      <h2>{category ? `home > ${category} 'shop` : 'All Products'}</h2>
+      <h3>{category ? `home > ${category} 'shop` : 'All Products'}</h3>
       </div>
     
     <div className='shop-product'  >
@@ -75,7 +75,7 @@ export const Shop = () => {
           <img src={product.image} alt={product.title} style={{ width: '100%',height:'50%' }} />
           <h2 className='Header-Title'>{product.title}</h2>
           {/* <p>{product.description}</p> */}
-          <p className='Paragraph-price'><strong>${product.price}</strong></p>
+          <p className='Paragraph-price'>${product.price}</p>
           {showButton[product.id] && (
               <button className='button-details' onClick={() => handleButtonClick(product.id)}>More details</button>
             )}
@@ -84,15 +84,19 @@ export const Shop = () => {
     </div>
     
 
-    <div className='pagination'>
-    <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-        <button onClick={() => paginate(1)}>1</button>
-        <button onClick={() => paginate(2)}>2</button>
-        <button onClick={() => paginate(3)}>3</button>
-        <button onClick={nextPage} disabled={currentPage === Math.ceil(filteredProducts.length / productsPerPage)}>Next</button>
-      </div>
 
   </div>
+      <div className='pagination'>
+      <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
+          <button onClick={() => paginate(1)}>1</button>
+          <button onClick={() => paginate(2)}>2</button>
+          <button onClick={() => paginate(3)}>3</button>
+          <button onClick={nextPage} disabled={currentPage === Math.ceil(filteredProducts.length / productsPerPage)}>Next</button>
+        </div>
+  
+
+        </>
+  
 
 
   );

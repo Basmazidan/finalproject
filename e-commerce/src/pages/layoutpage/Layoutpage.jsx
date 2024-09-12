@@ -13,8 +13,8 @@ export const Layoutpage = () => {
     <>
     <nav>
     <div className="Logo-Continer">
-        <img src={logo} alt="" />
-        <img src={FurniroImg} alt="" />
+        <img id='Img-logo1' src={logo} alt="" />
+        <img id='Img-logo2' src={FurniroImg} alt="" />
     </div>
   <ul>
     <li>

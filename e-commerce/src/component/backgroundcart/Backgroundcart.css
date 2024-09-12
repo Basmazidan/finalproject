@@ -10,12 +10,16 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+  @media screen and (max-width: 530px) {
+    .cart-icon{
+      max-width: 100%;
+    }
+  }
 
 
   
   .breadcrumb {
-
+    width: 100%;
     margin-top: 10px;
     font-size: 16px;
     color:black; /* Adjust based on your background */

@@ -6,9 +6,13 @@
     align-items: center;
     justify-content: center;
 }
-.header-contact > label{
-    color: #9F9F9F;
+@media screen and (max-width: 530px) {
+  .header-contact{
+    box-sizing: border-box;
+    padding: 20px;
+  }
 }
+
 .contact-main-continer{
     width: 100%;
     height: 70%;

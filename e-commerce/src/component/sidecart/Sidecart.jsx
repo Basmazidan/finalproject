@@ -27,9 +27,9 @@ const SidebarCart = () => {
       <hr style={{ width: "100%" }} />
       {cart && cart.length > 0 ? (
           <>
-        {cart.map((item, index) => (
+        {cart.map((item) => (
           
-          <div className='sidecartinfo' key={index}>
+          <div className='sidecartinfo' key={item.id}>
             <div>
             <img src={item.image} alt={item.title} />
             </div>

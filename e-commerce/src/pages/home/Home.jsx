@@ -50,10 +50,10 @@ export const Home = () => {
   return (
     <div className='Home-Wrapper'>
       <div className='Img-wrapper'>
-        <img src={DecortionImg} alt="" />
+        <img id='Img-wrapper1' src={DecortionImg} alt="" />
       </div>
       <div className='Categories'>
-      <h1>Categories</h1>
+      <h2>Categories</h2>
       <div className='Categories-wrapper'>
       {categories.map(category => (
               <Link className='category-link' to={`/shop/${category.name}`}key={category.id}>

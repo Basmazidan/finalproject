@@ -73,23 +73,21 @@ export const Singleproduct = () => {
     <div className='header-singleproduct'>
     <Breadcrumb productName={product.title} />
     </div>
+    <div className='main-singleproduct'>
       <div className='product-details'>
       <div className={`product-details2 ${isCartVisible ? 'faded' : ''}`}>
-    <div className="product-image">
-      <img src={product.image} alt={product.title} />
+      <div className="item-image">
+      <img className='image-single' src={product.image} alt={product.title} />
     </div>
     <div className="product-info">
+
       <h1>{product.title}</h1>
       <p className="price">RS.{product.price}</p>
       <div className="rating">
       {renderStars(product.rating.rate)}
         </div>
       
-      
-      <div className="color-options">
-        <h3>Choose Color:</h3>
-        
-      </div>
+
       <div className="quantity-selector">
         <div className='counter-div'>
         <button className="selectorbtn" onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>-</button>
@@ -110,10 +108,11 @@ export const Singleproduct = () => {
       </div>
     </div>
     </div>
+
     {isCartVisible && <SidebarCart cart={cart} />} 
     {isCartVisible && <div className="overlay"></div>}
   </div>
-
+  </div>
   </>
   
   );
