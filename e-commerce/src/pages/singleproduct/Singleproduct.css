@@ -136,6 +136,7 @@
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    color: black;
   }
   
    .quantity-selector {
@@ -163,6 +164,7 @@
     cursor: pointer;
     border: none;
     background-color: white;
+    color: black;
   }
   @media screen and (max-width: 530px) {
     .selectorbtn{

@@ -34,16 +34,16 @@ const Cart = () => {
                 <img className='imgcart' src={item.image} alt={item.title} />
                     <div className='info-for-product'>
                         <div className='product-label'>
-                        <label>{item.title}</label>
+                        <label className='label-info-cart'>{item.title}</label>
                         </div>
                         <div className='product-label2'>
-                        <label>{item.price}</label>
+                        <label className='label-info-cart'>{item.price}</label>
                         </div>
                         <div className='product-label2'>
-                        <label htmlFor="">Rs. {item.price * item.quantity}</label> 
+                        <label className='label-info-cart' htmlFor="">Rs. {item.price * item.quantity}</label> 
                         </div>
                         <div className='product-label2'>
-                        <label id='subtotal-label' htmlFor="">Rs{item.price}</label>
+                        <label className='label-info-cart' id='subtotal-label' htmlFor="">Rs{item.price}</label>
                         </div>
                     </div>
                 </div>
