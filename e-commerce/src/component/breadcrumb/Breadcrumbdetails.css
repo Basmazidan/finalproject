@@ -10,11 +10,11 @@
 
   
   }
-  /* @media screen and (max-width: 530px) {
-    .breadcrumb {
-      width: 500px;
+  @media screen and (max-width: 530px) {
+    .breadcrumb-active{
+      font-size: 15px;
     }
-} */
+}
 
   .breadcrumb1 a {
     text-decoration: none;

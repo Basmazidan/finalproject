@@ -189,11 +189,13 @@
     cursor: pointer;
     border: 1px solid #ddd;
     margin-right: 5px;
+    color: black;
   }
   
   .tab.active {
     background-color: #f0f0f0;
     border-bottom: none;
+    color: black;
   }
   
   .tab-content {
@@ -205,7 +207,7 @@
   }
   @media screen and (max-width: 530px) {
     .tab-content{
-      width: 400px;
+      width: 368px;
     }
   }
  
