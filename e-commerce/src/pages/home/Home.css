@@ -11,7 +11,7 @@
     height: 100%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 530px) {
     .Img-wrapper >img{
         width: 100%;
         height: 100%;
@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 530px) {
     .Categories-wrapper{
         flex-direction: column;
     }
@@ -46,7 +46,7 @@
     flex-direction: column;
     
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 530px) {
     .Categories-Continer{
         height: 390px;
     }
