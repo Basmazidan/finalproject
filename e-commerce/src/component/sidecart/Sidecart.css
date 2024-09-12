@@ -1,6 +1,6 @@
 .sidebar-cart{
     width:30%;
-    height: 550px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     margin-top: -280px;
@@ -12,6 +12,7 @@
     padding: 5px;
 
 }
+
 .sidecartinfo{
     display: flex;
     gap: 20px;

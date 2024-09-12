@@ -16,6 +16,11 @@
     flex-direction: column;
     gap: 15px;
 }
+@media screen and (max-width: 530px) {
+  .contact-middle-div{
+    flex-direction: column;
+  }
+}
 .contact-middle-div{
     width: 100%;
     height: 90%;
@@ -35,14 +40,18 @@
 
 
   }
+  
   .Inp-Continer{
     width: 90%;
     height: 90%;
     display: flex;
 
-
-
-
+  }
+  @media screen and (max-width: 530px) {
+    .Inp-Continer{
+      align-items: center;
+      justify-content: center;
+    }
   }
   .Info-div{
     width: 40%;

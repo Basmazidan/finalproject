@@ -6,7 +6,12 @@
     color: #6c757d;
     margin: 20px 0;
   }
-  
+  /* @media screen and (max-width: 530px) {
+    .breadcrumb {
+      width: 500px;
+    }
+} */
+
   .breadcrumb a {
     text-decoration: none;
     color: #6c757d;
