@@ -7,35 +7,37 @@ import { Link } from 'react-router-dom'
 export const Footer = () => {
   return (
     <>
+    <div className='Featears-Div-main'>
     <div className='Featears-Div'>
       <div className='feature-box'>
-        <div><img src={CupImg} alt="" /></div>
+        <div><img className='img-footer-div' src={CupImg} alt="" /></div>
         <div className='text-feature-section'>
-          <label htmlFor="">High Quality</label>
-          <label htmlFor="">crafted from top materials</label>
+          <label className='strong-label' htmlFor="">High Quality</label>
+          <label  htmlFor="">crafted from top materials</label>
         </div>
       </div>
       <div className='feature-box'>
-        <div><img src={WarrentyImg} alt="" /></div>
+        <div><img className='img-footer-div' src={WarrentyImg} alt="" /></div>
         <div className='text-feature-section'>
-        <label htmlFor="">Warranty Protection</label>
-        <label htmlFor="">Over 2 years</label>
+        <label className='strong-label' htmlFor="">Warranty Protection</label>
+        <label  htmlFor="">Over 2 years</label>
         </div>
         </div>
       <div className='feature-box'>
-        <div><img src={shipingImg} alt="" /></div>
+        <div><img className='img-footer-div' src={shipingImg} alt="" /></div>
         <div className='text-feature-section'>
-        <label htmlFor="">Free Shipping</label>
+        <label className='strong-label' htmlFor="">Free Shipping</label>
         <label htmlFor="">Order over 150 $</label>
         </div>
         </div>
       <div className='feature-box'>
-        <div><img src={CallImg} alt="" /></div>
+        <div><img className='img-footer-div' src={CallImg} alt="" /></div>
         <div className='text-feature-section'>
-        <label htmlFor="">24 / 7 Support</label>
+        <label className='strong-label' htmlFor="">24 / 7 Support</label>
         <label htmlFor="">Dedicated support</label>
         </div>
         </div>
+    </div>
     </div>
     <div className='details-and-links'>
       <div className='details-links-block'>

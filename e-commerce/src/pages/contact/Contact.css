@@ -13,6 +13,7 @@
   }
 }
 
+
 .contact-main-continer{
     width: 100%;
     height: 70%;
@@ -27,11 +28,13 @@
 }
 .contact-middle-div{
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
+
 .Info-Continer{
 
     border-radius: 5px;
@@ -64,9 +67,20 @@
     gap: 20px;
    align-items: center;
   }
+  @media screen and (max-width: 530px) {
+    .Info-div{
+      width: 72%;
+    }
+  }
   .Info-Img{
     width: 20px;
     height: 20px;
+  }
+  @media screen and (max-width: 530px) {
+    .myh2{
+      font-size: 17px;
+      margin: 0;
+    }
   }
   .myh2{
     margin: 0;

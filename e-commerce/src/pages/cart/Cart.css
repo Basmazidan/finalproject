@@ -44,6 +44,7 @@
     padding: 5px;
     gap:40px;
     align-items: center;
+    border-radius: 10px;
 
 }
 @media screen and (max-width: 530px) {
@@ -116,18 +117,20 @@
 }
 .cart-subtotal{
     width: 393px;
-    height: 390px;
+    height: 250px;
     background-color: #F9F1E7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
+    border-radius: 15px;
 }
 @media screen and (max-width: 530px) {
 
     .cart-subtotal{
-        width: 430px;
+        width: 316px;
         align-self: center;
+        border-radius: 15px;
     }
 }
 .div-subtotal-price{
