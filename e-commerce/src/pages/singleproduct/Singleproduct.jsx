@@ -71,7 +71,7 @@ export const Singleproduct = () => {
   return (
     <>
     <div className='header-singleproduct'>
-    <Breadcrumb productName={product.title} />
+    <Breadcrumb  productName={product.title} />
     </div>
     <div className='main-singleproduct'>
       <div className='product-details'>

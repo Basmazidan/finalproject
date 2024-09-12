@@ -72,7 +72,7 @@ export const Shop = () => {
     <div className='shop-product'  >
       {currentProducts.map(product => (
         <div key={product.id} className='Card-continer' onClick={() => handleImageClick(product.id)} >
-          <img src={product.image} alt={product.title} style={{ width: '100%',height:'50%' }} />
+          <img src={product.image} alt={product.title} style={{ width: '100%',height:'40%' }} />
           <h2 className='Header-Title'>{product.title}</h2>
           {/* <p>{product.description}</p> */}
           <p className='Paragraph-price'>${product.price}</p>

@@ -6,12 +6,19 @@
     flex-direction: column;
 
 }
+.Header-Title{
+    font-size: 16px;
+}
+@media screen and (max-width: 530px) {
+.Header-Title{
+    font-size: 10px;
+}
+
+}
 @media screen and (max-width: 530px) {
     .shop-continer{
         max-width: 100%;
         height:auto;
-
-
         
 
     }
@@ -62,7 +69,7 @@
 @media screen and (max-width: 530px) {
     .Card-continer{
         width: 190px;
-        max-height: 55%;
+        max-height: 50%;
         box-sizing: border-box;
         padding: 5px;
         
@@ -119,7 +126,7 @@
 }
 @media screen and (max-width: 530px) {
     .pagination{
-        margin-top: 460px;
+        margin-top: 500px;
     }
 
 }

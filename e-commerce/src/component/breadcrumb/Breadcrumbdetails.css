@@ -12,7 +12,7 @@
   }
   @media screen and (max-width: 530px) {
     .breadcrumb-active{
-      font-size: 15px;
+      font-size:10px;
     }
 }
 
